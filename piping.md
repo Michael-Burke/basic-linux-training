@@ -1,3 +1,5 @@
+# What is Piping?
+
 __Sourced from https://www.guru99.com/linux-pipe-grep.html#:~:text=is%20a%20Filter%3F-,What%20is%20a%20Pipe%20in%20Linux%3F,'%7C'%20denotes%20a%20pipe.__
 What is a Pipe in Linux?
 The Pipe is a command in Linux that lets you use two or more commands such that output of one command serves as input to the next. In short, the output of each process directly as input to the next one like a pipeline. The symbol ‘|’ denotes a pipe.
@@ -13,3 +15,11 @@ To avoid this, you can pipe the output of the ‘cat’ command to ‘less’ wh
 ```bash
 cat filename | less
 ```
+
+## Why is it useful?
+
+There are a number of reasons you might pipe output from one command into another. Some examples include:
+
+- Finding specifics values in a log, file, or configuration
+- Replacing specific values
+- Condensing CLI commands into a single continuous command (this also reduces the need for )  
