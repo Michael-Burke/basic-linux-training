@@ -19,9 +19,9 @@ The Linux operating system comprises several different pieces:
 
 ## Resources
 
-[Online Bash Interpreter](https://www.onlinegdb.com/online_bash_shell#)
-[Git for Windows](https://gitforwindows.org/)
-[REGEX Easy Mode](https://regexr.com/)
+- [Online Bash Interpreter](https://www.onlinegdb.com/online_bash_shell#)
+- [Git for Windows](https://gitforwindows.org/)
+- [REGEX Easy Mode](https://regexr.com/)
 
 ## Getting Ready for the Exercises
 
