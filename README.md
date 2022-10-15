@@ -76,7 +76,7 @@ fortune | cowsay | lolcat
 
 If successful, you should have a multi-colored cow and your own fortune-cookie style fortune printed in your terminal!
 
-## Exercise 2: Formating and Find / Replace
+## Exercise 2: Find and Replace
 
 You'll want to go learn about REGEX before continuing
 
@@ -90,7 +90,10 @@ Using `sed` we can modify the standard INPUT or 'STDIN' from our first `cat` com
 
 ```bash
 cat my_log_copy.log | sed -E 's/HACKER/EMPLOYEE/' > my_modified_secret_log.log
-cat my_modified_scret_log.log
+cat my_modified_secret_log.log
+
+# If we want to merely look for a string in a file you can use `grep`. This searches through the file to find the pattern "PID" and prints anywhere it finds it.
+cat my_modified_secret_log.log | grep PID
 ```
 
 We first read the file using `cat` and then pipe it into `sed` which uses a REGEX (`-E`) pattern to find (-s) the first pattern (__HACKER__) and replace it with (__EMPLOYEE__), and then output the stream (`>`) to a file (`my_modified_secret_log.log`). Using these tools you could replace a hostname incorrectly used multiple times in a 1500 line config file!
