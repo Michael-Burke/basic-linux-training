@@ -1,4 +1,8 @@
-# What is Linux?
+# Linux CLI and Bash Scripting Practice
+
+The purpose of this repository is to practice Linux CLI and bash scripting. There is an explaination of what Linux is, some resources, Getting Ready steps, and then 3 exercise to ease you into using Linux CLI and Bash Scripting!
+
+## What is Linux?
  __Sourced from https://www.linux.com/what-is-linux/__
 
 > Just like Windows, iOS, and Mac OS, Linux is an operating system. In fact, one of the most popular platforms on the planet, Android, is powered by the Linux operating system. An operating system is software that manages all of the hardware resources associated with your desktop or laptop. To put it simply, the operating system manages the communication between your software and your hardware. Without the operating system (OS), the software wouldn’t function.
@@ -15,9 +19,11 @@ The Linux operating system comprises several different pieces:
 
 ## Resources
 
-[Bash Interpreter](https://www.onlinegdb.com/online_bash_shell#)
+[Online Bash Interpreter](https://www.onlinegdb.com/online_bash_shell#)
+[Git for Windows](https://gitforwindows.org/)
+[REGEX Easy Mode](https://regexr.com/)
 
-## Getting Started and Ready
+## Getting Ready for the Exercises
 
 For the following training, you'll need access to the following:
 
