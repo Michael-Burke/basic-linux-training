@@ -49,14 +49,16 @@ It may ask state: "Please enable the Virtual Machine Platform Windows feature an
 
 ## Exercise 1: fortune, cowsay, and lolcat
 
-We're going to install a few silly packages to understand more about applications, using them, and piping values. The applications are fortune, cowsay, and lolcat.
+We're going to install a few silly packages to understand more about applications, using them, piping values, and STDIN/STDOUT.
+
+The applications we're going to use are fortune, cowsay, and lolcat.
 
 - `fortune` is an application that generates a random fortune based on a local database of quotes from the application
 - `cowsay` is an application that displays a cow with a speech bubble in your terminal!
 - `lolcat` takes the STDOUT from another application and rainbow colors the input
 
 ```bash
-# The below commands puts runs as an Admin (root), tells the linux Advanced Packaging Tool (APT) to `install` the three applications
+# The below commands runs as an Admin (root) and tells the Linux Advanced Packaging Tool (APT) to `install` the three applications
 sudo apt-get install fortune cowsay lolcat
 
 # You can remove them just as easily with the same command but replacing `install` with `remove`
@@ -65,14 +67,14 @@ sudo apt-get install fortune cowsay lolcat
 Now that you have those three applications, lets try and get the output of one as the input into another
 
 ```bash
-# This tells the application `fortune` to run and the `|` sends what is generated, or the standard output (STDOUT) to the next application as an INPUT. Cowsay then takes the INPUT and uses it and prints to the console.
+# This tells the application `fortune` to run and the `|` sends what is generated, or the standard output (STDOUT) to the next application as an INPUT or STDIN. Cowsay then takes the STDIN, processes it and prints it to the console:
 fortune | cowsay
 
 # Lets add some flare:
 fortune | cowsay | lolcat
 ```
 
-If successful, you should have a multi-colored cow and fortune printed in your terminal!
+If successful, you should have a multi-colored cow and your own fortune-cookie style fortune printed in your terminal!
 
 ## Exercise 2: Formating and Find / Replace
 
