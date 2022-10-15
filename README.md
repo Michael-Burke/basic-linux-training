@@ -2,6 +2,8 @@
 
 The purpose of this repository is to practice Linux CLI and bash scripting. There is an explaination of what Linux is, some resources, Getting Ready steps, and then 3 exercise to ease you into using Linux CLI and Bash Scripting!
 
+__Note:__ This is still very much a work in progress!
+
 ## What is Linux?
  __Sourced from https://www.linux.com/what-is-linux/__
 
