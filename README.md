@@ -44,9 +44,9 @@ It may ask state: "Please enable the Virtual Machine Platform Windows feature an
 
 We're going to install a few silly packages to understand more about applications, using them, and piping values. The applications are fortune, cowsay, and lolcat.
 
-> `fortune` is an application that generates a random fortune based on a local database of quotes from the application
-> `cowsay` is an application that displays a cow with a speech bubble in your terminal!
-> `lolcat` takes the STDOUT from another application and rainbow colors the input
+> - `fortune` is an application that generates a random fortune based on a local database of quotes from the application
+> - `cowsay` is an application that displays a cow with a speech bubble in your terminal!
+> - `lolcat` takes the STDOUT from another application and rainbow colors the input
 
 ```bash
 # The below commands puts runs as an Admin (root), tells the linux Advanced Packaging Tool (APT) to `install` the three applications
