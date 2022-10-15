@@ -46,3 +46,4 @@ chmod
 touch
 wc
 scp
+base64
