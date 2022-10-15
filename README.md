@@ -29,7 +29,7 @@ For the following training, you'll need access to the following:
 Once you have the above, create a folder in which you can create and practice in and open a terminal in that working directory.
 
 ### Git Clone
-For the excercises, it will be helpful to have access to the files and documentation. This can be pulled locally with:
+For the Exercises, it will be helpful to have access to the files and documentation. This can be pulled locally with:
 `git clone https://github.com/Michael-Burke/basic-linux-training.git`
 
 This will create a file duplicate of all the training materials.
@@ -40,7 +40,7 @@ Open the Windows Store and search for `Ubuntu`, and 'get' the un-versioned Ubunt
 
 It may ask state: "Please enable the Virtual Machine Platform Windows feature and ensure virtualization is enabled in the BIOS." In this case you'll need to enable this in your BIOS and in Windows Features to get access to WSL.
 
-## Excercise 1: fortune, cowsay, and lolcat
+## Exercise 1: fortune, cowsay, and lolcat
 
 We're going to install a few silly packages to understand more about applications, using them, and piping values. The applications are fortune, cowsay, and lolcat.
 
@@ -67,7 +67,7 @@ fortune | cowsay | lolcat
 
 If successful, you should have a multi-colored cow and fortune printed in your terminal!
 
-## Excercise 2: Formating and Find / Replace
+## Exercise 2: Formating and Find / Replace
 
 You'll want to go learn about REGEX before continuing
 
