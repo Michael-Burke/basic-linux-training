@@ -47,7 +47,7 @@ Open the Windows Store and search for `Ubuntu`, and 'get' the un-versioned Ubunt
 
 It may ask state: "Please enable the Virtual Machine Platform Windows feature and ensure virtualization is enabled in the BIOS." In this case you'll need to enable this in your BIOS and in Windows Features to get access to WSL.
 
-## Exercise 1: fortune, cowsay, and lolcat
+## Exercise 1: Concerning Piping, STDIN, and STDOUT
 
 We're going to install a few silly packages to understand more about applications, using them, piping values, and STDIN/STDOUT.
 
