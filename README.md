@@ -15,7 +15,7 @@ The Linux operating system comprises several different pieces:
 
 ## Resources
 
-[Bash Interpreter][https://www.onlinegdb.com/online_bash_shell#]
+[Bash Interpreter](https://www.onlinegdb.com/online_bash_shell#)
 
 ## Getting Started and Ready
 
@@ -24,7 +24,7 @@ For the following training, you'll need access to the following:
 - linux command line (CLI), Linux/MAC OS, or Windows Subsystem for Linux (WSL)(see below)
 - `git` CLI installed
   - Linux: `sudo apt-get install git`
-  - Windows: [Git for Windows][https://gitforwindows.org/]
+  - Windows: [Git for Windows](https://gitforwindows.org/)
 
 Once you have the above, create a folder in which you can create and practice in and open a terminal in that working directory.
 
