@@ -71,7 +71,7 @@ If successful, you should have a multi-colored cow and fortune printed in your t
 
 You'll want to go learn about REGEX before continuing
 
-Warning! Hacker information ahead! Let's say you want to find a specific value in a log file and replace it or remove it to cover your tracks. How can we use piping to make this a small, portable, and easy to run command or script?
+**Warning! Hacker information ahead!** Let's say you want to find a specific value in a log file and replace it or remove it to cover your tracks. How can we use piping to make this a small, portable, and easy to run command or script?
 
 First, lets get the log text using `cat` which is short for `concatenate` and will take all the text from your file and print it to the console.
 
