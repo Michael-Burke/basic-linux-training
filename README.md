@@ -71,10 +71,71 @@ If successful, you should have a multi-colored cow and fortune printed in your t
 
 You'll want to go learn about REGEX before continuing
 
-**Warning! Hacker information ahead!** Let's say you want to find a specific value in a log file and replace it or remove it to cover your tracks. How can we use piping to make this a small, portable, and easy to run command or script?
+We want to modify a log file in a single command. First lets get our log file and make a copy: `cp ./exercise-2/my_secret_log_log ./my_log_copy.log`. Next, lets look at the log text using `cat` which is short for `concatenate` and will take all the text from your file and print it to the console.
 
-First, lets get the log text using `cat` which is short for `concatenate` and will take all the text from your file and print it to the console.
-
-`cat my_secret_log.log`
+`cat my_log_copy.log`
 
 Now this is nice but you can't do anything with the text. We want to modify it and this is where `sed` comes in. `sed` is "Stream Editor" and takes a 'stream' from STDOUT and can modify it, sort of how some text editors loads all the text into memory so you can edit it and then later save it.
+
+Using `sed` we can modify the standard INPUT or 'STDIN' from our first `cat` command and use Regular Expression (REGEX) to filter/find/replace values. Given our log file, we can find and replace who created the logs:
+
+```bash
+cat my_log_copy.log | sed -E 's/HACKER/EMPLOYEE/' > my_modified_secret_log.log
+cat my_modified_scret_log.log
+```
+
+We first read the file using `cat` and then pipe it into `sed` which uses a REGEX (`-E`) pattern to find (-s) the first pattern (__HACKER__) and replace it with (__EMPLOYEE__), and then output the stream (`>`) to a file (`my_modified_secret_log.log`). Using these tools you could replace a hostname incorrectly used multiple times in a 1500 line config file!
+
+A useful website for learning about Regex and how to use it is [Regexr](https://regexr.com/)
+
+## Exercise 3: Bash Scripting
+
+`bash` scripting is taking Linux CLI commands and putting them into a file that will then execute those commands in a seperate shell, like an `.exe` file.
+
+Start by creating a file: `touch script.sh` and then give it execute privilege: `chmod +x script.sh`.
+
+Edit the script with nano/vim and at the top, start with `#!/bin/bash`. A clever mnemonic to remember that is "Sha-Bang-Wack".
+
+The following is basic examples of commands, variable declaration, if statements, for loops, while conditionals, and a practical example at the bottom.
+
+```bash
+#!/bin/bash
+
+# Prints the value to the terminal
+echo "Hello User"
+
+# Basic variable declaration
+my_string_var="String"
+my_number_var=5
+my_true_bool_var=True
+my_false_bool_var=False
+
+# Basic IF statement structure; notice I'm using the variable with a `$` preceeding it.
+if [-z $my_string_var ]
+    then
+        echo "My Value is TRUE"
+    else
+        echo "My Value is FALSE"
+fi
+
+# Basic FOR LOOP structure
+for i in {1..5} # this is a number range from 0 to 5
+    do
+        echo "Hello number $i!"
+    done
+
+# Basic While statement structure
+while [ $my_number_var -lt 5 ]
+do
+   counter=$(( $my_number_var - 1 ))
+   echo "$my_number_var"
+done
+
+# Get all files ending with '.yml' and then move them into a new directory for '.yml' files
+mkdir yaml_files_dir
+for $i in $(ls *.yml)
+do
+    mv $i ./yaml_files_dir/$i
+done
+
+```
